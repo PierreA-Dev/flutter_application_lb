@@ -370,23 +370,22 @@ class _GamePageState extends State<GamePage> {
   }
 
   final List<String> gifsdrink = [
-    'animations/drink1.gif',
-    'animations/drink1.gif',
-    'animations/drink2.gif',
-    'animations/drink3.gif',
-    'animations/drink4.gif',
-    'animations/drink5.gif',
-    'animations/drink6.gif',
-    'animations/drink7.gif',
-    'animations/drink8.gif',
-    'animations/drink9.gif',
-    'animations/drink10.gif',
-    'animations/drink11.gif',
+    'assets/animations/drink1.gif',
+    'assets/animations/drink2.gif',
+    'assets/animations/drink3.gif',
+    'assets/animations/drink4.gif',
+    'assets/animations/drink5.gif',
+    'assets/animations/drink6.gif',
+    'assets/animations/drink7.gif',
+    'assets/animations/drink8.gif',
+    'assets/animations/drink9.gif',
+    'assets/animations/drink10.gif',
+    'assets/animations/drink11.gif',
   ];
 
   final List<String> gifsfinish = [
-    'animations/finish1.gif',
-    'animations/finish2.gif',
+    'assets/animations/finish1.gif',
+    'assets/animations/finish2.gif',
   ];
 
   Future<void> _showOverlay(
@@ -459,7 +458,7 @@ class CardSlot extends StatelessWidget {
           borderRadius: BorderRadius.circular(14),
           child: faceDown
               ? Image.asset(
-                  'cards/back.png',
+                  'assets/cards/back.png',
                   fit: BoxFit.cover,
                   errorBuilder: (context, error, stack) {
                     return Container(
